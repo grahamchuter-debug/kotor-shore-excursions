@@ -31,7 +31,7 @@ const CATEGORIES = [
     title: "Adventure",
     description: "Fortress climb, Blue Cave speedboats and active mountain exploration.",
     href: "/shore-excursions/blue-cave-boat-trip",
-    imageKey: "coast",
+    imageKey: "blue-cave",
     emoji: "🧗",
   },
   {

@@ -1750,7 +1750,7 @@ export const experienceCards: ExperienceCard[] = [
     description: "Venetian walls, St Tryphon Cathedral and maritime museums — UNESCO Kotor from the cruise port.",
     href: "/guides/kotor-old-town-guide",
     cta: "Explore Old Town",
-    imageKey: "history",
+    imageKey: "medieval",
   },
   {
     slug: "bay-cruises",
@@ -1758,7 +1758,7 @@ export const experienceCards: ExperienceCard[] = [
     description: "Perast baroque waterfront, Our Lady of the Rocks and fjord-like Bay of Kotor boat trips.",
     href: "/guides/perast-guide",
     cta: "Explore the bay",
-    imageKey: "boat",
+    imageKey: "bay",
   },
   {
     slug: "blue-cave",
@@ -1766,7 +1766,7 @@ export const experienceCards: ExperienceCard[] = [
     description: "Speedboat to Plava Špilja — luminous blue swimming and Adriatic coastal adventure.",
     href: "/guides/blue-cave-guide",
     cta: "Explore Blue Cave",
-    imageKey: "boat",
+    imageKey: "blue-cave",
   },
   {
     slug: "scenic-mountains",
@@ -1774,7 +1774,7 @@ export const experienceCards: ExperienceCard[] = [
     description: "Lovćen National Park, Kotor Serpentine hairpins and Njegoš Mausoleum panoramas.",
     href: "/guides/lovcen-national-park-guide",
     cta: "Explore mountains",
-    imageKey: "fortress",
+    imageKey: "mountains",
   },
   {
     slug: "food-wine",

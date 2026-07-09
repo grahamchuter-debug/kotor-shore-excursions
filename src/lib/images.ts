@@ -26,6 +26,9 @@ export const siteImages = {
 
 export const subjectImages: Record<string, SiteImage> = {
   "old-town": { src: `${B}/old-town.jpg`, alt: "Kotor Old Town medieval streets and squares" },
+  medieval: { src: `${B}/medieval.jpg`, alt: "St Tryphon Cathedral and medieval Kotor Old Town" },
+  bay: { src: `${B}/bay.jpg`, alt: "Our Lady of the Rocks island church on the Bay of Kotor" },
+  "blue-cave": { src: `${B}/blue-cave.jpg`, alt: "Blue Cave (Plava Špilja) on the Bay of Kotor" },
   walls: { src: `${B}/fortress.jpg`, alt: "San Giovanni fortress walls above Kotor Old Town" },
   fortress: { src: `${B}/fortress.jpg`, alt: "Kotor fortress ramparts and mountain backdrop" },
   perast: { src: `${B}/boat.jpg`, alt: "Perast baroque waterfront on the Bay of Kotor" },
@@ -37,12 +40,13 @@ export const subjectImages: Record<string, SiteImage> = {
   history: { src: `${B}/history.jpg`, alt: "Medieval Kotor historic landmarks" },
   family: { src: `${B}/family.jpg`, alt: "Family exploring Kotor from cruise ship" },
   luxury: { src: `${B}/luxury.jpg`, alt: "Private luxury Kotor shore excursion" },
+  private: { src: `${B}/private.jpg`, alt: "Private touring in Kotor Old Town" },
   compare: { src: `${B}/compare.jpg`, alt: "Comparing Kotor cruise excursion options" },
   port: { src: `${B}/cruise-port.jpg`, alt: "Port of Kotor cruise terminal" },
   highlights: { src: `${B}/highlights.jpg`, alt: "Kotor highlights from cruise port" },
   photography: { src: `${B}/photography.jpg`, alt: "Kotor photography viewpoints" },
   city: { src: `${B}/old-town.jpg`, alt: "Kotor Old Town from cruise port" },
-  mountains: { src: `${B}/fortress.jpg`, alt: "Lovćen mountains above Bay of Kotor" },
+  mountains: { src: `${B}/mountains.jpg`, alt: "Lovćen mountains above Bay of Kotor" },
 };
 
 function pick(key: string): SiteImage {

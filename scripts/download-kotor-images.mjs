@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
  * Download Kotor-specific images from Wikimedia Commons (CC-licensed).
+ * Each experience-card image is distinct — no duplicate files across the six homepage cards.
  */
 import { writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
@@ -9,73 +10,86 @@ const OUT = join(import.meta.dirname, "..", "public/images");
 const UA = "KotorShoreExcursions/1.0 (https://kotorshoreexcursion.com; image setup)";
 
 const IMAGE_FILES = {
+  // Experience cards — each unique
+  "medieval.jpg": [
+    "File:Kotor Cathedral.jpg",
+    "File:Kotor old town 1.jpg",
+  ],
+  "bay.jpg": [
+    "File:Our Lady of the Rocks.jpg",
+    "File:Gospa od Skrpjela.jpg",
+  ],
+  "blue-cave.jpg": [
+    "File:Blue Cave (Plava špilja), Bay of Kotor, Montenegro 07.jpg",
+    "File:Blue Cave (Plava špilja), Bay of Kotor, Montenegro 03.jpg",
+    "File:Plava spilja by Klackalica.JPG",
+  ],
+  "mountains.jpg": [
+    "File:Lovcen.jpg",
+    "File:Kotor city walls.jpg",
+  ],
+  "private.jpg": [
+    "File:Kotor old town 2.jpg",
+    "File:Tourist boat Barba in Blue Cave, Montenegro.webp",
+  ],
+
+  // Shared site images — also kept distinct from each other
   "hero-home.jpg": [
-    "File:Bay of Kotor from the Fortress of Saint John.jpg",
-    "File:Kotor Bay Montenegro.jpg",
+    "File:Kotor city walls.jpg",
     "File:Kotor, Montenegro.jpg",
   ],
   "og-default.jpg": [
-    "File:Bay of Kotor from the Fortress of Saint John.jpg",
-    "File:Kotor Old Town.jpg",
+    "File:Kotor Cathedral.jpg",
     "File:Kotor, Montenegro.jpg",
   ],
   "old-town.jpg": [
-    "File:Kotor Old Town.jpg",
-    "File:Kotor, Montenegro.jpg",
-    "File:Stari grad Kotor.jpg",
+    "File:Kotor old town 1.jpg",
+    "File:Kotor old town 2.jpg",
+  ],
+  "history.jpg": [
+    "File:Kotor Cathedral.jpg",
+    "File:Kotor old town 1.jpg",
   ],
   "fortress.jpg": [
-    "File:Bay of Kotor from the Fortress of Saint John.jpg",
-    "File:Kotor Fortress.jpg",
     "File:Kotor city walls.jpg",
+    "File:Kotor Fortress.jpg",
   ],
   "coast.jpg": [
+    "File:Gospa od Skrpjela.jpg",
     "File:Kotor Bay Montenegro.jpg",
-    "File:Bay of Kotor.jpg",
-    "File:Perast Montenegro.jpg",
   ],
   "boat.jpg": [
     "File:Perast Montenegro.jpg",
-    "File:Our Lady of the Rocks Perast.jpg",
-    "File:Bay of Kotor boat.jpg",
+    "File:Our Lady of the Rocks.jpg",
   ],
   "food.jpg": [
     "File:GreekSalad.jpg",
-    "File:Montenegrin cuisine.jpg",
   ],
   "wine.jpg": [
     "File:Red Wine Glass.jpg",
-    "File:Vranac wine.jpg",
-  ],
-  "history.jpg": [
-    "File:Kotor Old Town.jpg",
-    "File:St Tryphon Cathedral Kotor.jpg",
-    "File:Kotor, Montenegro.jpg",
   ],
   "family.jpg": [
-    "File:Kotor Old Town.jpg",
-    "File:Kotor, Montenegro.jpg",
+    "File:Kotor old town 2.jpg",
+    "File:Kotor old town 1.jpg",
   ],
   "luxury.jpg": [
-    "File:Bay of Kotor from the Fortress of Saint John.jpg",
     "File:Perast Montenegro.jpg",
+    "File:Our Lady of the Rocks.jpg",
   ],
   "compare.jpg": [
-    "File:Bay of Kotor from the Fortress of Saint John.jpg",
-    "File:Kotor Bay Montenegro.jpg",
+    "File:Blue Cave (Plava špilja), Bay of Kotor, Montenegro 07.jpg",
+    "File:Kotor, Montenegro.jpg",
   ],
   "cruise-port.jpg": [
-    "File:Kotor cruise port.jpg",
-    "File:Port of Kotor.jpg",
     "File:Kotor, Montenegro.jpg",
   ],
   "highlights.jpg": [
-    "File:Bay of Kotor from the Fortress of Saint John.jpg",
-    "File:Kotor Bay Montenegro.jpg",
+    "File:Kotor city walls.jpg",
+    "File:Kotor, Montenegro.jpg",
   ],
   "photography.jpg": [
-    "File:Bay of Kotor from the Fortress of Saint John.jpg",
-    "File:Kotor Fortress.jpg",
+    "File:Lovcen.jpg",
+    "File:Kotor city walls.jpg",
   ],
 };
 
@@ -84,7 +98,9 @@ mkdirSync(OUT, { recursive: true });
 async function fetchCommonsUrl(fileName) {
   const apiUrl = `https://commons.wikimedia.org/w/api.php?action=query&titles=${encodeURIComponent(fileName)}&prop=imageinfo&iiprop=url&format=json`;
   const res = await fetch(apiUrl, { headers: { "User-Agent": UA } });
-  const data = await res.json();
+  const text = await res.text();
+  if (text.startsWith("You are making")) throw new Error("rate limited");
+  const data = JSON.parse(text);
   const pages = data?.query?.pages;
   if (!pages) return null;
   const page = Object.values(pages)[0];
@@ -94,6 +110,7 @@ async function fetchCommonsUrl(fileName) {
 async function downloadImage(outFile, candidates) {
   for (const candidate of candidates) {
     try {
+      await new Promise((r) => setTimeout(r, 1500));
       const url = await fetchCommonsUrl(candidate);
       if (!url) continue;
       const res = await fetch(url, { headers: { "User-Agent": UA } });
