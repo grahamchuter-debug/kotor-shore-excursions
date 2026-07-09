@@ -1,0 +1,183 @@
+import type { Comparison, ComparisonGuideItem, FAQ } from "./types";
+
+export const comparisons: Comparison[] = [
+  {
+    slug: "blue-cave-vs-perast",
+    title: "Blue Cave Boat Trip vs Perast & Our Lady of the Rocks",
+    seoTitle: "Blue Cave Boat Trip vs Perast & Our Lady of the Rocks — Kotor Cruise Passengers",
+    metaDescription: "On a standard Kotor port day choose between Adriatic adventure — swimming in the luminous Blue Cave — or baroque heritage at Perast and the island church. Both are half-day water experiences with different character.",
+    kind: "versus",
+    optionA: "Blue Cave Boat Trip",
+    optionB: "Perast & Our Lady of the Rocks",
+    summary: "On a standard Kotor port day choose between Adriatic adventure — swimming in the luminous Blue Cave — or baroque heritage at Perast and the island church. Both are half-day water experiences with different character.",
+    verdict: "Choose Perast and Our Lady of the Rocks for first-time Kotor — UNESCO baroque town, island church and bay scenery with cultural depth. Choose the Blue Cave when you want swimming, speedboats and geological wonder over history. Repeat visitors who have walked Old Town often pick the cave.",
+    overview: ["Blue Cave: speedboat from Kotor, 45–90 min on water, weather dependent, swimming focus, minimal walking.", "Perast: 30–40 min drive, baroque waterfront, 5 min boat to island church, museum and heritage focus.", "Combining both needs 10+ hour calls — otherwise one bay anchor per day."],
+    comparisonTable: [{ category: "Transfer from port", optionA: "Harbour boat departure", optionB: "30–40 min coach to Perast" }, { category: "Time needed", optionA: "3–4 hours total", optionB: "3–4 hours total" }, { category: "Swimming", optionA: "Yes — cave swim stop", optionB: "Optional; church and stroll focus" }, { category: "Best for", optionA: "Swimmers, adventure, repeat visitors", optionB: "First-timers, history, photography" }, { category: "Weather risk", optionA: "High — sea state can cancel", optionB: "Low — road and short boat" }],
+    faqs: [{ question: "Can I do both on one port day?", answer: "Only on 10+ hour calls — otherwise pick one bay excursion." }, { question: "Which is our Editor's Choice?", answer: "Perast and Our Lady of the Rocks — best first-timer bay experience." }],
+    relatedSlugs: ["blue-cave-guide", "perast-guide", "kotor-perast-our-lady-of-the-rocks"],
+    imageKey: "boat",
+  },
+  {
+    slug: "should-i-climb-the-fortress",
+    title: "Climb San Giovanni Fortress vs Skip the Fortress",
+    seoTitle: "Climb San Giovanni Fortress vs Skip the Fortress — Kotor Cruise Passengers",
+    metaDescription: "The Kotor fortress offers the bay's best views but demands 1,350 steps in full sun. On a standard port day the climb is worth it for active travellers; others should invest time in Old Town depth or Perast instead.",
+    kind: "versus",
+    optionA: "Climb San Giovanni Fortress",
+    optionB: "Skip the Fortress",
+    summary: "The Kotor fortress offers the bay's best views but demands 1,350 steps in full sun. On a standard port day the climb is worth it for active travellers; others should invest time in Old Town depth or Perast instead.",
+    verdict: "Climb if you have reasonable fitness, 2+ spare hours and morning shade — the panorama is unforgettable. Skip if you have limited mobility, young children, a short call or heat sensitivity — Old Town and Perast deliver plenty without the steps.",
+    overview: ["Climb: 1,350 steps, 60–90 min up, 30–45 min down, €8–10 ticket, full sun, iconic photos.", "Skip: more time for cathedral, museums, konoba lunch or Perast excursion.", "Guided climbs pace rest stops — worth it if unsure of fitness."],
+    comparisonTable: [{ category: "Physical effort", optionA: "Active — steep steps", optionB: "Moderate — Old Town cobbles only" }, { category: "Time required", optionA: "2–2.5 hours total", optionB: "Freed for other sights" }, { category: "Best views", optionA: "Bay panorama from ramparts", optionB: "Harbour level and Perast boat" }, { category: "Best for", optionA: "Fit active travellers", optionB: "Families, short calls, heat-sensitive" }, { category: "Return confidence", optionA: "High if started early", optionB: "Higher — more schedule margin" }],
+    faqs: [{ question: "Fortress on a 6-hour call?", answer: "Tight — Old Town only unless you are very fit and start immediately." }, { question: "Fortress or Perast?", answer: "Different experiences — fortress for views over Kotor; Perast for bay baroque." }],
+    relatedSlugs: ["kotor-fortress-guide", "fortress-climb-tour", "kotor-for-families"],
+    imageKey: "fortress",
+  },
+  {
+    slug: "diy-vs-guided",
+    title: "DIY Kotor vs Guided Shore Excursion",
+    seoTitle: "DIY Kotor vs Guided Shore Excursion — Kotor Cruise Passengers",
+    metaDescription: "DIY Old Town walks from the cruise port cost little and carry high return confidence. DIY Perast adds taxi timing risk. Guided excursions cost more but bundle boat tickets, historian guides and ship-aware timing.",
+    kind: "versus",
+    optionA: "DIY Kotor",
+    optionB: "Guided Shore Excursion",
+    summary: "DIY Old Town walks from the cruise port cost little and carry high return confidence. DIY Perast adds taxi timing risk. Guided excursions cost more but bundle boat tickets, historian guides and ship-aware timing.",
+    verdict: "Choose DIY for Old Town and optional fortress if you are a confident walker and will return 90 minutes before all-aboard. Choose guided for Perast boats, Lovćen drives, Blue Cave weather calls and first-time callers who want zero logistics stress.",
+    overview: ["DIY: walk to Sea Gate (free), fortress ticket €8–10, lunch €15–25 — €30–50 plus food. You manage timing.", "Guided: minivan from terminal, boat tickets, historian guide, 60–90 minute buffers. Operators track departure.", "DIY saves €40–80 per person for Old Town days; guided saves costly Perast timing mistakes."],
+    comparisonTable: [{ category: "Cost per person", optionA: "€30–55 plus food", optionB: "€70–130+ all-in" }, { category: "Return confidence", optionA: "High for Old Town only", optionB: "High for all routes" }, { category: "Perast timing", optionA: "Taxi coordination needed", optionB: "Handled by operator" }, { category: "Best for", optionA: "Experienced cruisers, Old Town focus", optionB: "Bay trips, first-timers, families" }],
+    faqs: [{ question: "Is DIY Old Town safe?", answer: "Yes — compact and walkable. Pre-book taxi if climbing fortress in heat." }, { question: "Best sight for DIY?", answer: "Old Town walk — fortress self-climb if fit." }],
+    relatedSlugs: ["independent-kotor-guide", "can-you-visit-kotor-without-excursion", "kotor-for-first-time-visitors"],
+    imageKey: "old-town",
+  },
+  {
+    slug: "private-tour-vs-group-tour",
+    title: "Private Tour vs Group Shore Excursion",
+    seoTitle: "Private Tour vs Group Shore Excursion — Kotor Cruise Passengers",
+    metaDescription: "Private Kotor tours offer custom routing, vehicle at each stop and flexible pacing. Group excursions cost less per person and suit solo travellers — but follow fixed coach schedules.",
+    kind: "versus",
+    optionA: "Private Tour",
+    optionB: "Group Shore Excursion",
+    summary: "Private Kotor tours offer custom routing, vehicle at each stop and flexible pacing. Group excursions cost less per person and suit solo travellers — but follow fixed coach schedules.",
+    verdict: "Choose private for families of four plus, mixed mobility needs, honeymoon trips or when you want fortress AND Perast on a long call. Choose group for value, solo travel and standard Perast or highlights routes where itinerary fits.",
+    overview: ["Private: dedicated vehicle, custom stops, €300–600+ per group typical, best 4–8 guests.", "Group: 8–40 passengers, fixed route, €70–120 per person, social and economical for solos.", "Both reputable options track all-aboard — private offers more margin control."],
+    comparisonTable: [{ category: "Cost for couple", optionA: "Higher total, flexible value", optionB: "€140–240 typical" }, { category: "Itinerary", optionA: "Fully custom", optionB: "Fixed route" }, { category: "Pacing", optionA: "Your speed", optionB: "Group consensus" }, { category: "Best for", optionA: "Families, luxury, mixed interests", optionB: "Solos, couples on budget, standard routes" }],
+    faqs: [{ question: "Is private worth the cost?", answer: "Often yes for 4+ sharing vehicle — similar per-head to premium group tours." }, { question: "Group tour quality in Kotor?", answer: "Good operators run excellent small groups — read reviews for ship tracking." }],
+    relatedSlugs: ["private-kotor-tour", "kotor-highlights", "kotor-for-families"],
+    imageKey: "private",
+  },
+  {
+    slug: "best-excursion-first-time-visitors",
+    title: "Best Kotor Excursions for First-Time Visitors",
+    seoTitle: "Best Kotor Shore Excursions for First-Timers — Cruise Port",
+    metaDescription: "Ranked Kotor shore excursions for first-time cruise passengers — Perast, highlights, Old Town and private options.",
+    kind: "guide",
+    summary: "First-timers need one clear anchor, reliable boat or fortress timing and an operator who understands all-aboard — these excursions deliver consistently from the Port of Kotor.",
+    verdict: "Book before sailing in peak season. Morning departures protect afternoon return margins when fortress trails and Perast boats fill up.",
+    overview: ["Kotor, Perast & Our Lady of the Rocks is our Editor's Choice for balanced bay scenery and heritage.", "Kotor Highlights suits active passengers wanting Old Town and fortress on one day.", "Old Town walking tour fits short calls and those skipping the climb.", "Private tours suit mixed groups wanting flexible pacing."],
+    guideItems: [{
+        name: "Kotor, Perast & Our Lady of the Rocks",
+        slug: "kotor-perast-our-lady-of-the-rocks",
+        href: "/shore-excursions/kotor-perast-our-lady-of-the-rocks",
+        reason: "Editor's pick — bay scenery, island church and Old Town sequenced with expert timing.",
+        topExcursion: "Kotor, Perast & Our Lady of the Rocks",
+        returnConfidence: "High on 7+ hour calls",
+        walkingDifficulty: "Easy to moderate — no fortress climb",
+      }, {
+        name: "Kotor Highlights",
+        slug: "kotor-highlights",
+        href: "/shore-excursions/kotor-highlights",
+        reason: "When you want Old Town and fortress summit on one active day.",
+        topExcursion: "Kotor Highlights Shore Excursion",
+        returnConfidence: "High on 8+ hour calls",
+        walkingDifficulty: "Active — fortress steps",
+      }, {
+        name: "Old Town Walking Tour",
+        slug: "old-town-walking-tour",
+        href: "/shore-excursions/old-town-walking-tour",
+        reason: "Best when your call is short or fortress walking is too demanding.",
+        topExcursion: "Old Town Walking Tour",
+        returnConfidence: "Very high",
+        walkingDifficulty: "Moderate — cobbled lanes",
+      }, {
+        name: "Fortress Climb Tour",
+        slug: "fortress-climb-tour",
+        href: "/shore-excursions/fortress-climb-tour",
+        reason: "When the rampart panorama is your non-negotiable must-do.",
+        topExcursion: "Fortress Climb Tour",
+        returnConfidence: "High if started early",
+        walkingDifficulty: "Active — 1,350 steps",
+      }, {
+        name: "Private Kotor Tour",
+        slug: "private-kotor-tour",
+        href: "/shore-excursions/private-kotor-tour",
+        reason: "Custom routing for families and mixed interests with strongest flexibility.",
+        topExcursion: "Private Kotor Tour",
+        returnConfidence: "Very high",
+        walkingDifficulty: "Flexible",
+      }],
+    faqs: [{ question: "One excursion for first-timers?", answer: "Kotor, Perast & Our Lady of the Rocks on standard calls — Old Town only on short calls." }, { question: "Fortress or Perast first?", answer: "Perast for relaxed heritage; fortress for views over Old Town. Editor's Choice covers Perast." }],
+    relatedSlugs: ["kotor-for-first-time-visitors", "should-i-climb-the-fortress", "kotor-perast-our-lady-of-the-rocks"],
+    imageKey: "highlights",
+  },
+  {
+    slug: "can-you-visit-kotor-without-excursion",
+    title: "Can You Visit Kotor Without a Shore Excursion?",
+    seoTitle: "Visit Kotor Without a Shore Excursion — DIY Cruise Port Guide",
+    metaDescription: "Can you visit Kotor without a shore excursion? Yes — walking routes, fortress tickets, taxi prices and what needs a tour.",
+    kind: "guide",
+    summary: "Kotor is one of the Mediterranean's best ports for independent exploration — Old Town is 400 metres from the gangway. Bay and mountain sights need more planning.",
+    verdict: "Walk Old Town and climb the fortress independently on most calls. Book a tour or taxi for Perast, Lovćen and Blue Cave — or accept that DIY bay days need tight taxi coordination.",
+    overview: ["Old Town: 5–10 min walk from port — free, essential, highly walkable.", "Fortress: self-climb with ticket at trailhead — €8–10, allow 2+ hours.", "Perast: taxi €25–35 each way or excursion — boat timing is the challenge.", "Lovćen and Blue Cave: strongly recommend organised tours."],
+    guideItems: [{
+        name: "Old Town DIY Walk",
+        slug: "independent-kotor-guide",
+        href: "/guides/independent-kotor-guide",
+        reason: "Sea Gate to cathedral — the essential free experience from the port.",
+        topExcursion: "Old Town Walking Tour (optional guide)",
+        returnConfidence: "Very high",
+        walkingDifficulty: "Moderate cobbles",
+      }, {
+        name: "Fortress Self-Climb",
+        slug: "kotor-fortress-guide",
+        href: "/guides/kotor-fortress-guide",
+        reason: "Buy tickets at trailhead — no tour required if fit and time-aware.",
+        topExcursion: "Fortress Climb Tour (for pacing)",
+        returnConfidence: "High if early start",
+        walkingDifficulty: "Active — 1,350 steps",
+      }, {
+        name: "Perast Independent",
+        slug: "perast-guide",
+        href: "/guides/perast-guide",
+        reason: "Possible by taxi but boat and return timing need discipline.",
+        topExcursion: "Kotor, Perast & Our Lady of the Rocks",
+        returnConfidence: "Moderate DIY — high guided",
+        walkingDifficulty: "Easy at Perast",
+      }, {
+        name: "Guided Bay Trip",
+        slug: "kotor-perast-our-lady-of-the-rocks",
+        href: "/shore-excursions/kotor-perast-our-lady-of-the-rocks",
+        reason: "When you want Perast without taxi logistics stress.",
+        topExcursion: "Editor's Choice bay excursion",
+        returnConfidence: "High",
+        walkingDifficulty: "Easy to moderate",
+      }],
+    faqs: [{ question: "Will the ship wait if I go independent?", answer: "No — only ship excursions carry delay guarantee. Keep 60–90 minute buffer." }, { question: "How much cash for DIY day?", answer: "€40–60 plus lunch covers fortress, taxi and snacks." }],
+    relatedSlugs: ["independent-kotor-guide", "diy-vs-guided", "is-kotor-walkable"],
+    imageKey: "old-town",
+  }
+];
+
+export function getComparisonBySlug(slug: string): Comparison | undefined {
+  return comparisons.find((c) => c.slug === slug);
+}
+
+export function getAllComparisonSlugs(): string[] {
+  return comparisons.map((c) => c.slug);
+}
+
+export function getComparisonDisplayTitle(comp: Comparison): string {
+  if (comp.kind === "versus" && comp.optionA && comp.optionB) {
+    return `${comp.optionA} vs ${comp.optionB}`;
+  }
+  return comp.title;
+}
