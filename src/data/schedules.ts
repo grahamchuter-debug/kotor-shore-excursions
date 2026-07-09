@@ -37,7 +37,7 @@ export const schedulePorts: ShipSchedulePort[] = [
     slug: "kotor",
     name: "Kotor",
     country: "Montenegro",
-    seoTitle: "Kotor Cruise Ship Schedule 2026",
+    seoTitle: "Kotor Cruise Ship Schedule Overview",
     metaDescription:
       "Kotor cruise ship schedule — see which ships call at the Port of Kotor and plan shore excursions around published arrival and departure times.",
     intro:

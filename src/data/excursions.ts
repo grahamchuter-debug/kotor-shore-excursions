@@ -104,7 +104,7 @@ export const excursions: ExcursionPage[] = [
     slug: "blue-cave-boat-trip",
     title: "Blue Cave Boat Trip",
     seoTitle: "Blue Cave Boat Shore Excursion from Kotor Cruise Port",
-    metaDescription: "Speedboat to the Blue Cave (Plava Špilja) from Kotor cruise port — swimming, coastal scenery and cruise-timed return.",
+    metaDescription: "Speedboat to the Blue Cave (Plava Špilja) from Kotor cruise port — swimming, coastal scenery and cruise-timed return....",
     category: "Boat trip",
     tagline: "Luminous blue cavern swimming — Montenegro's Adriatic adventure.",
     duration: "4–5 hours",

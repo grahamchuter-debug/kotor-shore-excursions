@@ -1,52 +1,49 @@
 export interface SiteImage {
   src: string;
   alt: string;
+  base: string;
 }
 
 const B = "/images";
 
+function img(base: string, alt: string): SiteImage {
+  return { base, src: `${B}/${base}.jpg`, alt };
+}
+
 export const siteImages = {
-  hero: {
-    src: `${B}/hero-home.jpg`,
-    alt: "Cruise ship entering the Bay of Kotor with medieval town and mountains",
-  },
-  ogDefault: {
-    src: `${B}/og-default.jpg`,
-    alt: "Kotor cruise planning — Old Town, Bay of Kotor and Port of Kotor",
-  },
+  hero: img("hero-home", "Cruise ship entering the Bay of Kotor with medieval town and mountains"),
+  ogDefault: img("og-default", "Kotor cruise planning — Old Town, Bay of Kotor and Port of Kotor"),
   logo: {
+    base: "logo-mark",
     src: `${B}/logo-mark.svg`,
     alt: "Kotor Shore Excursions",
   },
-  port: {
-    src: `${B}/cruise-port.jpg`,
-    alt: "Cruise ships at the Port of Kotor",
-  },
+  port: img("cruise-port", "Cruise ships at the Port of Kotor"),
 } as const;
 
 export const subjectImages: Record<string, SiteImage> = {
-  "old-town": { src: `${B}/old-town.jpg`, alt: "Kotor Old Town medieval streets and squares" },
-  medieval: { src: `${B}/medieval.jpg`, alt: "St Tryphon Cathedral and medieval Kotor Old Town" },
-  bay: { src: `${B}/bay.jpg`, alt: "Our Lady of the Rocks island church on the Bay of Kotor" },
-  "blue-cave": { src: `${B}/blue-cave.jpg`, alt: "Blue Cave (Plava Špilja) on the Bay of Kotor" },
-  walls: { src: `${B}/fortress.jpg`, alt: "San Giovanni fortress walls above Kotor Old Town" },
-  fortress: { src: `${B}/fortress.jpg`, alt: "Kotor fortress ramparts and mountain backdrop" },
-  perast: { src: `${B}/boat.jpg`, alt: "Perast baroque waterfront on the Bay of Kotor" },
-  coast: { src: `${B}/coast.jpg`, alt: "Bay of Kotor coastline and mountains" },
-  beach: { src: `${B}/coast.jpg`, alt: "Adriatic coast near Kotor" },
-  boat: { src: `${B}/boat.jpg`, alt: "Boat trip on the Bay of Kotor" },
-  food: { src: `${B}/food.jpg`, alt: "Montenegrin cuisine in Kotor Old Town" },
-  wine: { src: `${B}/wine.jpg`, alt: "Montenegrin wine tasting" },
-  history: { src: `${B}/history.jpg`, alt: "Medieval Kotor historic landmarks" },
-  family: { src: `${B}/family.jpg`, alt: "Family exploring Kotor from cruise ship" },
-  luxury: { src: `${B}/luxury.jpg`, alt: "Private luxury Kotor shore excursion" },
-  private: { src: `${B}/private.jpg`, alt: "Private touring in Kotor Old Town" },
-  compare: { src: `${B}/compare.jpg`, alt: "Comparing Kotor cruise excursion options" },
-  port: { src: `${B}/cruise-port.jpg`, alt: "Port of Kotor cruise terminal" },
-  highlights: { src: `${B}/highlights.jpg`, alt: "Kotor highlights from cruise port" },
-  photography: { src: `${B}/photography.jpg`, alt: "Kotor photography viewpoints" },
-  city: { src: `${B}/old-town.jpg`, alt: "Kotor Old Town from cruise port" },
-  mountains: { src: `${B}/mountains.jpg`, alt: "Lovćen mountains above Bay of Kotor" },
+  "old-town": { base: "old-town", src: `${B}/old-town.jpg`, alt: "Kotor Old Town medieval streets and squares" },
+  medieval: { base: "medieval", src: `${B}/medieval.jpg`, alt: "St Tryphon Cathedral and medieval Kotor Old Town" },
+  bay: { base: "bay", src: `${B}/bay.jpg`, alt: "Our Lady of the Rocks island church on the Bay of Kotor" },
+  "blue-cave": { base: "blue-cave", src: `${B}/blue-cave.jpg`, alt: "Blue Cave (Plava Špilja) on the Bay of Kotor" },
+  walls: { base: "fortress", src: `${B}/fortress.jpg`, alt: "San Giovanni fortress walls above Kotor Old Town" },
+  fortress: { base: "fortress", src: `${B}/fortress.jpg`, alt: "Kotor fortress ramparts and mountain backdrop" },
+  perast: { base: "boat", src: `${B}/boat.jpg`, alt: "Perast baroque waterfront on the Bay of Kotor" },
+  coast: { base: "coast", src: `${B}/coast.jpg`, alt: "Bay of Kotor coastline and mountains" },
+  beach: { base: "coast", src: `${B}/coast.jpg`, alt: "Adriatic coast near Kotor" },
+  boat: { base: "boat", src: `${B}/boat.jpg`, alt: "Boat trip on the Bay of Kotor" },
+  food: { base: "food", src: `${B}/food.jpg`, alt: "Montenegrin cuisine in Kotor Old Town" },
+  wine: { base: "wine", src: `${B}/wine.jpg`, alt: "Montenegrin wine tasting" },
+  history: { base: "history", src: `${B}/history.jpg`, alt: "Medieval Kotor historic landmarks" },
+  family: { base: "family", src: `${B}/family.jpg`, alt: "Family exploring Kotor from cruise ship" },
+  luxury: { base: "luxury", src: `${B}/luxury.jpg`, alt: "Private luxury Kotor shore excursion" },
+  private: { base: "private", src: `${B}/private.jpg`, alt: "Private touring in Kotor Old Town" },
+  compare: { base: "compare", src: `${B}/compare.jpg`, alt: "Comparing Kotor cruise excursion options" },
+  port: img("cruise-port", "Port of Kotor cruise terminal"),
+  highlights: { base: "highlights", src: `${B}/highlights.jpg`, alt: "Kotor highlights from cruise port" },
+  photography: { base: "photography", src: `${B}/photography.jpg`, alt: "Kotor photography viewpoints" },
+  city: { base: "old-town", src: `${B}/old-town.jpg`, alt: "Kotor Old Town from cruise port" },
+  mountains: { base: "mountains", src: `${B}/mountains.jpg`, alt: "Lovćen mountains above Bay of Kotor" },
 };
 
 function pick(key: string): SiteImage {
