@@ -56,7 +56,7 @@ export const experienceCards: ExperienceCard[] = [
   {
     slug: "bay-cruises",
     title: "Bay Cruises",
-    description: "Perast baroque waterfront, Our Lady of the Rocks and fjord-like Bay of Kotor boat trips.",
+    description: "Perast baroque waterfront, Our Lady of the Rocks and serpentine Bay of Kotor boat trips.",
     href: "/guides/perast-guide",
     cta: "Explore the bay",
     imageKey: "bay",

@@ -15,7 +15,7 @@ const TIMELINE: TimelineItem[] = [
   {
     time: "Approach",
     title: "Mountain scenery unfolds",
-    description: "Dramatic limestone cliffs rise on both sides as the ship navigates the fjord-like channel toward Kotor.",
+    description: "Dramatic limestone cliffs rise on both sides as the ship navigates the narrow inlet channel toward Kotor.",
     highlight: true,
   },
   {

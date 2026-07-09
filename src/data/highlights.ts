@@ -34,7 +34,7 @@ export const highlights: AttractionPage[] = [
     seoTitle: "Kotor Fortress (San Giovanni) Climb — Cruise Port Guide & Timings",
     metaDescription: "Climb Kotor's San Giovanni Fortress from the cruise port — 1,350 steps, rampart views, ticket tips and return-to-ship planning for cruise passengers.",
     attractionName: "San Giovanni Fortress",
-    tagline: "1,350 steps to the fortress of St John — the Bay of Kotor spread below like a fjord.",
+    tagline: "1,350 steps to the fortress of St John — the Bay of Kotor spread below like a narrow gulf.",
     overview: "The San Giovanni (St John's) Fortress climbs the mountain behind Kotor Old Town — roughly 1,350 stone steps to ramparts with views over the entire bay. For active cruise passengers this is the signature Kotor experience after the Old Town stroll.",
     body: [
       "Cruise ships dock at the Port of Kotor, within walking distance of the UNESCO-listed Old Town. Allow 5–10 minutes on foot to the Sea Gate or 2–3 minutes by taxi. The Bay of Kotor arrival is one of Europe's most spectacular — plan to be on deck. Confirm your all-aboard time and keep a 60–90 minute buffer before departure.",
@@ -49,7 +49,7 @@ export const highlights: AttractionPage[] = [
       { method: "Taxi from port", detail: "Metered taxis at the terminal rank — fastest in heat or with limited mobility.", time: "2–3 min", cost: "€3–6" },
       { method: "Shore excursion", detail: "Coach, minivan or walking tour with guide and return timed to all-aboard.", time: "Door-to-door", cost: "Tour price" },
     ],
-    highlights: ["Church of Our Lady of Remedy midway", "San Giovanni ramparts panorama", "Bay of Kotor fjord views", "Old Town roofscape from above"],
+    highlights: ["Church of Our Lady of Remedy midway", "San Giovanni ramparts panorama", "Bay of Kotor panorama views", "Old Town roofscape from above"],
     tips: ["Start before 09:00 in peak season", "Bring at least 1 litre of water per person", "Wear trainers with grip — not sandals"],
     faqs: [{ question: "Can I climb the fortress on a short port call?", answer: "Tight on calls under 6 usable hours — allow 2+ hours for climb plus Old Town. See our should-I-climb comparison." }, { question: "Is the fortress included on shore excursions?", answer: "Many walking and highlights tours include tickets and paced ascent — worth it when unsure of fitness." }],
     relatedAttractionSlugs: ["kotor-old-town-guide", "one-day-in-kotor", "should-i-climb-the-fortress"],
@@ -308,7 +308,7 @@ export const highlights: AttractionPage[] = [
     overview: "Kotor is a highlight of Adriatic cruising — but port days go wrong when passengers underestimate fortress time, miss tender changes or cut return buffers too fine. These tips come from real cruise-timed planning.",
     body: [
       "Cruise ships dock at the Port of Kotor, within walking distance of the UNESCO-listed Old Town. Allow 5–10 minutes on foot to the Sea Gate or 2–3 minutes by taxi. The Bay of Kotor arrival is one of Europe's most spectacular — plan to be on deck. Confirm your all-aboard time and keep a 60–90 minute buffer before departure.",
-      "Arrival: be on an upper deck 30–60 minutes before docking — the Bay of Kotor sail-in rivals Norwegian fjords. Ashore: start Old Town or excursions early when two ships share the day. Currency: euro; carry small notes for taxis and church donations.",
+      "Arrival: be on an upper deck 30–60 minutes before docking — the Bay of Kotor sail-in rivals the world's most dramatic coastal approaches. Ashore: start Old Town or excursions early when two ships share the day. Currency: euro; carry small notes for taxis and church donations.",
       "Tender ports: confirm on your cruise app the night before — tendering adds 20–30 minutes each way. All-aboard: be at the port 60–90 minutes early; fortress descents and Perast road traffic can delay you. Download offline maps — Wi-Fi at the terminal is patchy.",
     ],
     distanceFromPort: "N/A — practical tips",
@@ -358,7 +358,7 @@ export const highlights: AttractionPage[] = [
     seoTitle: "Bay of Kotor — Boka Kotorska Guide for Cruise Passengers",
     metaDescription: "Explore the Bay of Kotor (Boka Kotorska) on a cruise port day — Perast, Risan, Herceg Novi and boat trips from Kotor....",
     attractionName: "Bay of Kotor",
-    tagline: "Europe's southernmost fjord — baroque towns and navy-blue water in every direction.",
+    tagline: "Europe's southernmost Adriatic inlet — baroque towns and navy-blue water in every direction.",
     overview: "The Bay of Kotor (Boka Kotorska) is a submerged river canyon — a winding inlet framed by mountains with medieval towns at every bend. Your ship sails the full length on arrival and departure; ashore, bay cruises reach Perast, Risan mosaics and Blue Cave.",
     body: [
       "Cruise ships dock at the Port of Kotor, within walking distance of the UNESCO-listed Old Town. Allow 5–10 minutes on foot to the Sea Gate or 2–3 minutes by taxi. The Bay of Kotor arrival is one of Europe's most spectacular — plan to be on deck. Confirm your all-aboard time and keep a 60–90 minute buffer before departure.",

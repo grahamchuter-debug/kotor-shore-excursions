@@ -20,7 +20,7 @@ export function EditorsChoice() {
               Not because it&apos;s the most expensive option — because it combines everything that makes a Kotor port day unforgettable.
             </p>
             <ul className="mt-6 space-y-3 text-white/80">
-              <li className="flex items-center gap-3"><span className="text-autumn-400">✓</span> Spectacular fjord-like bay scenery</li>
+              <li className="flex items-center gap-3"><span className="text-autumn-400">✓</span> Spectacular winding bay scenery</li>
               <li className="flex items-center gap-3"><span className="text-autumn-400">✓</span> UNESCO Old Town history in Kotor</li>
               <li className="flex items-center gap-3"><span className="text-autumn-400">✓</span> Relaxed boat ride to Perast</li>
               <li className="flex items-center gap-3"><span className="text-autumn-400">✓</span> Our Lady of the Rocks island church</li>

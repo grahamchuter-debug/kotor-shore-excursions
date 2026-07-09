@@ -42,7 +42,7 @@ export const schedulePorts: ShipSchedulePort[] = [
       "Kotor cruise ship schedule — see which ships call at the Port of Kotor and plan shore excursions around published arrival and departure times.",
     intro:
       "Kotor is a highlight of Adriatic and Eastern Mediterranean itineraries. Check scheduled arrivals and departures before booking fortress, Perast or Blue Cave excursions.",
-    description: "Montenegro's fjord-like bay cruise gateway — UNESCO Old Town at the port.",
+    description: "Montenegro's winding bay cruise gateway — UNESCO Old Town at the port.",
     scheduleOverview:
       "Peak cruise traffic April through October, with heaviest calls June to September on Adriatic itineraries.",
     planningTips: SCHEDULE_TIPS,

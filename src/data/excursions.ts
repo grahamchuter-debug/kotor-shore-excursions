@@ -88,7 +88,7 @@ export const excursions: ExcursionPage[] = [
     bestFor: "Active travellers who want the fortress as their anchor sight",
     overview: "The fortress climb is Kotor's signature active experience — 1,350 stone steps to San Giovanni ramparts with bay panoramas. This tour includes tickets, paced guide and Old Town orientation.",
     body: [
-      "Start early to beat heat and crowds. Guide sets rest pace at Church of Our Lady of Remedy midway. Summit time for photos over Old Town and the fjord-like bay.",
+      "Start early to beat heat and crowds. Guide sets rest pace at Church of Our Lady of Remedy midway. Summit time for photos over Old Town and the serpentine bay.",
       "Descent to Arms Square for optional coffee. Not suitable for severe mobility limitations, heart conditions or very young children in summer heat.",
       "Do not combine with Lovćen or Blue Cave on standard calls — fortress alone fills a half-day with Old Town context.",
     ],
